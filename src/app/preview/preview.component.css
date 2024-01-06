@@ -1,0 +1,102 @@
+
+.main {
+  /* margin-top: 80px; */
+  padding: 50px;
+}
+/* Structure */
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.img-div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.imgclass {
+  width: 200px;
+  height: 100px;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 1.25em;
+  line-height: 1.3;
+  padding: 3px;
+  text-align: center;
+  color: white;
+  margin: 0px;
+  background-color: rgb(86, 67, 40);
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.text-2 {
+  font-weight: 500;
+  font-size: 1.25em;
+  line-height: 1.3;
+  padding: 3px;
+  text-align: center;
+  color: white;
+  margin: 0px;
+  background-color: rgb(20, 58, 78);
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.table-responsive {
+  overflow-x: auto; /* Makes the table horizontally scrollable on small screens */
+}
+
+@media screen and (max-width: 768px) {
+  .mat-form-field {
+    width: 100%;
+   
+  }
+  .main{
+      margin: 40px;
+  }
+}
+
+/* Styles for the table on small screens */
+@media screen and (max-width: 600px) {
+  .table-responsive {
+    -webkit-overflow-scrolling: touch; 
+  }
+
+  .mat-header-cell, .mat-cell {
+    padding: 8px; 
+    font-size: 12px;
+  }
+
+  .mat-header-cell .mat-sort-header-arrow, .mat-header-cell .mat-sort-header-pointer {
+    display: none;
+  }
+
+  .main{
+      margin:-29px;
+  }
+  .img-div{
+    display: block;
+    text-align: center;
+    margin-left: 60px;
+  }
+  .text-div{
+    width: 200px;
+    margin-bottom: 20px;
+   left: 50%;
+  }
+}
+
+.mat-table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
